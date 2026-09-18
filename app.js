@@ -1,5 +1,6 @@
 const state = {
   plants: [],
+<<<<<<< HEAD
   catalogIndex: null,
   searchIndex: null,
   shardCache: new Map(),
@@ -8,6 +9,11 @@ const state = {
   selected: [],
   layers: { native: true, introduced: true, invasive: true, observations: false },
   mode: 'demo'
+=======
+  world: null,
+  selected: [],
+  layers: { native: true, introduced: true, invasive: true, observations: false }
+>>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
 };
 
 const worldView = { center: [18, 0], zoom: 2 };
@@ -19,9 +25,14 @@ const map = L.map('map', {
   attributionControl: true
 }).setView(worldView.center, worldView.zoom);
 
+<<<<<<< HEAD
 // Plant Atlas intentionally does not use a third-party raster tile server.
 // The basemap is served as local GeoJSON and is therefore compatible with
 // static hosting such as Cloudflare Pages/Workers.
+=======
+// No OSM/CARTO tile layer is used. The world map is local GeoJSON, so the map
+// does not depend on a third-party raster tile server or its usage policy.
+>>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
 const worldLayer = L.geoJSON(null, {
   style: {
     color: '#b9c8ba',
@@ -30,8 +41,12 @@ const worldLayer = L.geoJSON(null, {
     fillOpacity: 1
   },
   onEachFeature: (feature, layer) => {
+<<<<<<< HEAD
     const p = feature.properties || {};
     const name = p.name || p.ADMIN || p.LEVEL3_NAM || p.level3Name || 'Region';
+=======
+    const name = feature.properties?.name || feature.properties?.ADMIN || 'Country';
+>>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
     layer.bindTooltip(name, { sticky: true, className: 'country-tooltip' });
   }
 }).addTo(map);
@@ -56,6 +71,7 @@ function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
 }
 
+<<<<<<< HEAD
 function commonName(p) {
   return p?.commonNames?.[0]?.name || p?.commonNames?.[0] || p?.common || p?.scientificName || p?.scientific || 'Unknown plant';
 }
@@ -108,17 +124,33 @@ function countryFeatures(codes) {
 }
 
 function addFeatureCollection(features, plant, type, layerGroup, labelPrefix='Mapped') {
+=======
+function statusLabel(p) { return p?.status || 'documented'; }
+
+function countryFeatures(codes) {
+  const wanted = new Set(codes || []);
+  return state.world?.features?.filter(f => wanted.has(String(f.properties?.iso_a3 || '').toUpperCase())) || [];
+}
+
+function makeRangeLayer(plant, type) {
+  const features = countryFeatures(plant.ranges?.[type]);
+>>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
   if (!features.length) return;
   const multiple = state.selected.length > 1;
   const layer = L.geoJSON({ type: 'FeatureCollection', features }, {
     style: () => ({
       color: COLORS[type],
       weight: multiple ? 0.9 : 1.4,
+<<<<<<< HEAD
       opacity: 0.82,
+=======
+      opacity: 0.8,
+>>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
       fillColor: COLORS[type],
       fillOpacity: multiple ? 0.24 : 0.40
     }),
     onEachFeature: (feature, featureLayer) => {
+<<<<<<< HEAD
       const region = getFeatureName(feature);
       featureLayer.bindPopup(`<div class="range-popup"><strong>${escapeHtml(commonName(plant))}</strong><em>${escapeHtml(scientificName(plant))}</em><div><span>Region</span><b>${escapeHtml(region)}</b></div><div><span>${escapeHtml(labelPrefix)} status</span><b>${escapeHtml(type)}</b></div><div><span>Source status</span><b>${escapeHtml(statusLabel(plant))}</b></div></div>`);
     }
@@ -200,6 +232,25 @@ async function drawObservations(plant) {
     if (recordUrl) marker.bindPopup(`<div class="range-popup"><strong>GBIF observation</strong><div><span>Country</span><b>${escapeHtml(o.country || 'Unknown')}</b></div><a href="${recordUrl}" target="_blank" rel="noopener noreferrer">View occurrence ↗</a></div>`);
     marker.addTo(rangeLayers.observations);
   });
+=======
+      const country = feature.properties?.name || 'Country';
+      featureLayer.bindPopup(`<div class="range-popup"><strong>${escapeHtml(plant.common)}</strong><em>${escapeHtml(plant.scientific)}</em><div><span>Country</span><b>${escapeHtml(country)}</b></div><div><span>Mapped status</span><b>${escapeHtml(type)}</b></div><div><span>Source status</span><b>${escapeHtml(statusLabel(plant))}</b></div></div>`);
+    }
+  });
+  layer.addTo(rangeLayers[type]);
+}
+
+function drawObservations(plant) {
+  const [lat, lng] = plant.observationCenter || [];
+  if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+  for (let i = 0; i < 24; i++) {
+    const angle = i * 0.95;
+    const radius = 0.09 * Math.sqrt(i + 1);
+    L.circleMarker([lat + Math.sin(angle) * radius * 2.7, lng + Math.cos(angle) * radius * 3.7], {
+      radius: 4.2, color: '#fff', weight: 1.2, fillColor: '#3a6f9d', fillOpacity: .85
+    }).bindTooltip(`${escapeHtml(plant.common)}<br><em>Demo occurrence</em>`, { direction: 'top' }).addTo(rangeLayers.observations);
+  }
+>>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
 }
 
 function clearRangeLayers() { Object.values(rangeLayers).forEach(layer => layer.clearLayers()); }
@@ -217,6 +268,7 @@ function renderMap() {
   const status = document.getElementById('mapStatus');
   if (!state.selected.length) {
     title.textContent = 'Choose a plant';
+<<<<<<< HEAD
     status.textContent = state.mode === 'catalog'
       ? 'Source-backed catalog loaded. Select a species to add native, introduced, and invasive overlays.'
       : 'The map shows the world without a third-party tile service. Select a species to add distribution overlays.';
@@ -231,6 +283,13 @@ function renderMap() {
       ['invasive', d.invasive?.length || p.invasive?.length || 0]
     ].filter(([, n]) => n > 0).map(([label, n]) => `${n.toLocaleString()} ${label}`).join(' · ');
     status.textContent = `${scientificName(p)} · ${statusLabel(p)} · ${counts || 'no distribution rows'} · ${source}`;
+=======
+    status.textContent = 'The map shows the world without a third-party tile service. Select a species to add distribution overlays.';
+  } else if (state.selected.length === 1) {
+    const p = state.selected[0];
+    title.textContent = p.common;
+    status.textContent = `${p.scientific} · ${p.status || 'documented'}`;
+>>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
   } else {
     title.textContent = `${state.selected.length} species selected`;
     status.textContent = 'Compare each selected species across the native, introduced, and invasive layers.';
@@ -242,6 +301,7 @@ function renderSelection() {
   const list = document.getElementById('selectionList');
   title.textContent = state.selected.length ? `${state.selected.length} selected` : 'Nothing selected';
   if (!state.selected.length) { list.innerHTML = '<div class="empty-state">Selected plants appear here.</div>'; return; }
+<<<<<<< HEAD
   list.innerHTML = state.selected.map(p => `<div class="selection-item"><span class="selection-dot"></span><div class="selection-copy"><div class="selection-name">${escapeHtml(commonName(p))}</div><div class="selection-sci">${escapeHtml(scientificName(p))}</div></div><button class="remove-btn" data-remove="${escapeHtml(p.id)}" aria-label="Remove">×</button></div>`).join('');
   list.querySelectorAll('[data-remove]').forEach(b => b.addEventListener('click', () => removePlant(b.dataset.remove)));
 }
@@ -298,11 +358,31 @@ async function addPlant(id) {
   }
   if (!p) return;
   if (!state.selected.some(x => x.id === p.id)) state.selected.push(p);
+=======
+  list.innerHTML = state.selected.map(p => `<div class="selection-item"><span class="selection-dot"></span><div class="selection-copy"><div class="selection-name">${escapeHtml(p.common)}</div><div class="selection-sci">${escapeHtml(p.scientific)}</div></div><button class="remove-btn" data-remove="${escapeHtml(p.id)}" aria-label="Remove">×</button></div>`).join('');
+  list.querySelectorAll('[data-remove]').forEach(b => b.addEventListener('click', () => removePlant(b.dataset.remove)));
+}
+
+function renderSearch(query='') {
+  const wrap = document.getElementById('searchResults');
+  const q = query.trim().toLowerCase();
+  if (!q) { wrap.innerHTML = '<div class="search-hint">Start typing above to find a species.</div>'; return; }
+  const results = state.plants.filter(p => `${p.common} ${p.scientific} ${p.family || ''}`.toLowerCase().includes(q)).slice(0, 10);
+  wrap.innerHTML = results.length ? results.map(p => `<button class="result" data-select="${escapeHtml(p.id)}"><span class="result-main"><span class="result-name">${escapeHtml(p.common)}</span><span class="result-sci">${escapeHtml(p.scientific)}</span></span><span class="result-badge">${escapeHtml((p.status || 'documented').split(' ')[0])}</span></button>`).join('') : `<div class="search-hint">No match for “${escapeHtml(query)}”. Add the species to <code>data/plants.json</code>.</div>`;
+  wrap.querySelectorAll('[data-select]').forEach(b => b.addEventListener('click', () => addPlant(b.dataset.select)));
+}
+
+function addPlant(id) {
+  const p = state.plants.find(x => x.id === id);
+  if (!p) return;
+  if (!state.selected.some(x => x.id === id)) state.selected.push(p);
+>>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
   renderSelection(); renderMap();
 }
 
 function removePlant(id) { state.selected = state.selected.filter(p => p.id !== id); renderSelection(); renderMap(); }
 
+<<<<<<< HEAD
 async function loadJSON(pathname) {
   const r = await fetch(pathname, { cache: 'no-store' });
   if (!r.ok) throw new Error(`${pathname}: ${r.status}`);
@@ -355,6 +435,17 @@ async function loadData() {
     console.warn('Source-backed catalog unavailable; using legacy catalog.', e);
     await loadLegacyCatalog();
   }
+=======
+async function loadJSON(pathname) { const r = await fetch(pathname, { cache: 'no-store' }); if (!r.ok) throw new Error(`${pathname}: ${r.status}`); return r.json(); }
+
+async function loadData() {
+  try { state.world = await loadJSON('data/world.geojson'); worldLayer.addData(state.world); }
+  catch (e) { console.warn('World map file unavailable.', e); }
+
+  try { state.plants = await loadJSON('data/plants.json'); if (!Array.isArray(state.plants)) throw new Error('Catalog must be an array'); }
+  catch (e) { console.warn('Using embedded plant catalog.', e); state.plants = fallbackCatalog; }
+  document.getElementById('catalogCount').textContent = `${state.plants.length} species`;
+>>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
 }
 
 // UI events
