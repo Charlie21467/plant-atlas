@@ -4,36 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Plant Atlas — explore where plants are native, introduced, and invasive.">
-<<<<<<< HEAD
   <title>Plant Atlas — Global Plant Ranges</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
-=======
-  
-  <meta name="google-site-verification" content="VQ6kNdwutvd8zNREkEXdmcU-Ja_d-RTTi8WD4IwxQPQ" />
-
-  <link rel="icon" type="image/svg+xml" href="logo.svg">
-  
-  <title>Plant Atlas — Global Plant Ranges</title>
-  <link rel="preconnect" href="https://unpkg.com">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLQGFQD3P4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZLQGFQD3P4');
-</script>
-  
->>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
 <body>
   <div class="app-shell">
     <header class="topbar">
@@ -60,11 +36,7 @@
         <section class="hero-section">
           <div class="eyebrow">SPECIES EXPLORER</div>
           <h1>Where does a plant belong?</h1>
-<<<<<<< HEAD
           <p>Search a species and separate its native range from places where it was introduced or became invasive.</p>
-=======
-          <p>Search a species and separate its native range from places where it was introduced or became invasive. More species will be added soon!</p>
->>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
         </section>
 
         <section class="panel-section">
@@ -112,11 +84,7 @@
               <div><div class="eyebrow">GLOBAL RANGE MAP</div><strong id="mapTitle">Choose a plant</strong></div>
               <button class="map-reset" id="resetView">Reset</button>
             </div>
-<<<<<<< HEAD
             <p id="mapStatus">Source-backed WCVP ranges appear after the data import is deployed; the local map does not rely on a third-party tile service.</p>
-=======
-            <p id="mapStatus">The map shows country-level demonstration ranges until you connect source-backed polygons.</p>
->>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
           </div>
         </div>
         <div class="map-overlay map-bottom">
@@ -143,11 +111,7 @@
         <div><strong>Occurrences</strong><span>GBIF and other biodiversity repositories</span></div>
         <div><strong>Invasive status</strong><span>CABI plus regional authorities</span></div>
       </div>
-<<<<<<< HEAD
       <p class="note"><strong>Data note:</strong> before the WCVP pipeline is run, the site falls back to the small prototype catalog. After import, the frontend loads the source-backed catalog and WGSRPD Level 3 range geometry.</p>
-=======
-      <p class="note"><strong>Important:</strong> the included catalog uses demonstration country ranges. Treat it as interface data until you replace ranges with source-backed geographic datasets.</p>
->>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
     </div>
   </dialog>
 
@@ -156,11 +120,7 @@
       <button class="dialog-close" data-close="sourcesDialog" aria-label="Close">×</button>
       <div class="eyebrow">SOURCES & METHODOLOGY</div>
       <h2>What should count as a range?</h2>
-<<<<<<< HEAD
       <p>Native and introduced ranges come from WCVP/POWO. Occurrence records are queried from GBIF and are not treated as proof of native or invasive status. Invasive labels require an explicit source record.</p>
-=======
-      <p>Use authoritative distribution sources for native and introduced ranges, then keep invasive status separately sourced. Occurrence records are evidence of observations, not automatic proof that a species is native or invasive.</p>
->>>>>>> e29d526205d07f3fc6258f5064a6e71927595b32
       <div class="methodology-list">
         <div><strong>Native range</strong><span>Use taxonomic/distribution references such as Kew POWO/WCVP and regional floras.</span></div>
         <div><strong>Introduced range</strong><span>Use documented naturalization or introduction records with regional sources where available.</span></div>

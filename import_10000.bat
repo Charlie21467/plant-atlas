@@ -19,7 +19,7 @@ if errorlevel 1 (
 if not exist source-downloads mkdir source-downloads
 
 echo --- Download WCVP + WGSRPD sources ---
-python scripts\download_sources.py --all --dir source-downloads --map-out data\level3.geojson
+python scripts\download_sources.py --all --dir source-downloads --map-out data\level3
 if errorlevel 1 (
     echo ERROR: Source download failed. The pipeline has stopped.
     set "EXIT_CODE=1"
@@ -73,6 +73,15 @@ echo --- Validate generated catalog ---
 python scripts\validate_catalog.py data\catalog
 if errorlevel 1 (
     echo ERROR: Catalog validation failed. The pipeline has stopped.
+    set "EXIT_CODE=1"
+    goto :finish
+)
+
+echo.
+echo --- Check Cloudflare asset sizes ---
+python scripts\check_cloudflare_assets.py
+if errorlevel 1 (
+    echo ERROR: One or more deployable assets are too large. The pipeline has stopped.
     set "EXIT_CODE=1"
     goto :finish
 )

@@ -1,0 +1,1522 @@
+{
+  "schemaVersion": 1,
+  "source": "WGSRPD Level 3 / Flora Codex v1.0.0",
+  "sourceUrl": "https://github.com/floracodex/wgsrpd-geojson/releases/download/v1.0.0/wgsrpd-geojson-v1.0.0-combined.zip",
+  "featureCount": 369,
+  "shardCount": 4,
+  "maxShardBytes": 8388608,
+  "files": [
+    "level3-000.geojson",
+    "level3-001.geojson",
+    "level3-002.geojson",
+    "level3-003.geojson"
+  ],
+  "shards": [
+    {
+      "file": "level3-000.geojson",
+      "bytes": 8361971,
+      "features": 105,
+      "codes": [
+        "ABT",
+        "AFG",
+        "AGE",
+        "AGS",
+        "AGW",
+        "ALA",
+        "ALB",
+        "ALG",
+        "ALT",
+        "AMU",
+        "AND",
+        "ANG",
+        "ANT",
+        "ARI",
+        "ARK",
+        "ARU",
+        "ASC",
+        "ASK",
+        "ASS",
+        "ATP",
+        "AUT",
+        "AZO",
+        "BAH",
+        "BAL",
+        "BAN",
+        "BEN",
+        "BER",
+        "BGM",
+        "BKN",
+        "BLR",
+        "BLT",
+        "BLZ",
+        "BOL",
+        "BOR",
+        "BOT",
+        "BOU",
+        "BRC",
+        "BRY",
+        "BUL",
+        "BUR",
+        "BZC",
+        "BZE",
+        "BZL",
+        "BZN",
+        "BZS",
+        "CAB",
+        "CAF",
+        "CAL",
+        "CAY",
+        "CBD",
+        "CGS",
+        "CHA",
+        "CHC",
+        "CHH",
+        "CHI",
+        "CHM",
+        "CHN",
+        "CHQ",
+        "CHS",
+        "CHT",
+        "CHX",
+        "CKI",
+        "CLC",
+        "CLM",
+        "CLN",
+        "CLS",
+        "CMN",
+        "CNT",
+        "CNY",
+        "COL",
+        "COM",
+        "CON",
+        "COO",
+        "COR",
+        "COS",
+        "CPI",
+        "CPP",
+        "CPV",
+        "CRL",
+        "CTA",
+        "CTM",
+        "CUB",
+        "CVI",
+        "CYP",
+        "CZE",
+        "DEL",
+        "DEN",
+        "DJI",
+        "DOM",
+        "EAI",
+        "EAS",
+        "ECU",
+        "EGY",
+        "EHM",
+        "ELS",
+        "EQG",
+        "ERI",
+        "ETH",
+        "FAL",
+        "FIJ",
+        "FIN",
+        "FLA",
+        "FOR",
+        "FRA",
+        "FRG"
+      ]
+    },
+    {
+      "file": "level3-001.geojson",
+      "bytes": 8381416,
+      "features": 119,
+      "codes": [
+        "GAB",
+        "GAL",
+        "GAM",
+        "GEO",
+        "GER",
+        "GGI",
+        "GHA",
+        "GIL",
+        "GNB",
+        "GNL",
+        "GRB",
+        "GRC",
+        "GST",
+        "GUA",
+        "GUI",
+        "GUY",
+        "HAI",
+        "HAW",
+        "HBI",
+        "HMD",
+        "HON",
+        "HUN",
+        "ICE",
+        "IDA",
+        "ILL",
+        "IND",
+        "INI",
+        "IOW",
+        "IRE",
+        "IRK",
+        "IRN",
+        "IRQ",
+        "ITA",
+        "IVO",
+        "JAM",
+        "JAP",
+        "JAW",
+        "KAM",
+        "KAN",
+        "KAZ",
+        "KEG",
+        "KEN",
+        "KER",
+        "KGZ",
+        "KHA",
+        "KOR",
+        "KRA",
+        "KRI",
+        "KRY",
+        "KTY",
+        "KUW",
+        "LAB",
+        "LAO",
+        "LBR",
+        "LBS",
+        "LBY",
+        "LDV",
+        "LEE",
+        "LES",
+        "LIN",
+        "LOU",
+        "LSI",
+        "MAG",
+        "MAI",
+        "MAN",
+        "MAQ",
+        "MAS",
+        "MAU",
+        "MCI",
+        "MDG",
+        "MDR",
+        "MDV",
+        "MIC",
+        "MIN",
+        "MLI",
+        "MLW",
+        "MLY",
+        "MNT",
+        "MOL",
+        "MON",
+        "MOR",
+        "MOZ",
+        "MRN",
+        "MRQ",
+        "MRS",
+        "MRY",
+        "MSI",
+        "MSO",
+        "MTN",
+        "MXC",
+        "MXE",
+        "MXG",
+        "MXN",
+        "MXS",
+        "MXT",
+        "MYA",
+        "NAM",
+        "NAT",
+        "NBR",
+        "NCA",
+        "NCS",
+        "NDA",
+        "NEB",
+        "NEP",
+        "NET",
+        "NEV",
+        "NFK",
+        "NFL",
+        "NGA",
+        "NGR",
+        "NIC",
+        "NLA",
+        "NNS",
+        "NOR",
+        "NRU",
+        "NSC",
+        "NSW",
+        "NTA",
+        "NUE"
+      ]
+    },
+    {
+      "file": "level3-002.geojson",
+      "bytes": 8069797,
+      "features": 115,
+      "codes": [
+        "NUN",
+        "NWC",
+        "NWG",
+        "NWH",
+        "NWJ",
+        "NWM",
+        "NWT",
+        "NWY",
+        "NZN",
+        "NZS",
+        "OFS",
+        "OHI",
+        "OKL",
+        "OMA",
+        "ONT",
+        "ORE",
+        "PAK",
+        "PAL",
+        "PAN",
+        "PAR",
+        "PEI",
+        "PEN",
+        "PER",
+        "PHI",
+        "PIT",
+        "POL",
+        "POR",
+        "PRM",
+        "PUE",
+        "QLD",
+        "QUE",
+        "REU",
+        "RHO",
+        "ROM",
+        "RUC",
+        "RUE",
+        "RUN",
+        "RUS",
+        "RUW",
+        "RWA",
+        "SAK",
+        "SAM",
+        "SAR",
+        "SAS",
+        "SAU",
+        "SCA",
+        "SCI",
+        "SCS",
+        "SDA",
+        "SEN",
+        "SEY",
+        "SGE",
+        "SIC",
+        "SIE",
+        "SIN",
+        "SOA",
+        "SOC",
+        "SOL",
+        "SOM",
+        "SPA",
+        "SRL",
+        "SSA",
+        "STH",
+        "SUD",
+        "SUL",
+        "SUM",
+        "SUR",
+        "SVA",
+        "SWE",
+        "SWI",
+        "SWZ",
+        "TAI",
+        "TAN",
+        "TAS",
+        "TCI",
+        "TCS",
+        "TDC",
+        "TEN",
+        "TEX",
+        "THA",
+        "TKM",
+        "TOG",
+        "TOK",
+        "TON",
+        "TRT",
+        "TUA",
+        "TUB",
+        "TUE",
+        "TUN",
+        "TUR",
+        "TUV",
+        "TVA",
+        "TVL",
+        "TZK",
+        "UGA",
+        "UKR",
+        "URU",
+        "UTA",
+        "UZB",
+        "VAN",
+        "VEN",
+        "VER",
+        "VIC",
+        "VIE",
+        "VNA",
+        "VRG",
+        "WAK",
+        "WAL",
+        "WAS",
+        "WAU",
+        "WDC",
+        "WHM",
+        "WIN",
+        "WIS",
+        "WSA"
+      ]
+    },
+    {
+      "file": "level3-003.geojson",
+      "bytes": 1227041,
+      "features": 30,
+      "codes": [
+        "ALD",
+        "ALU",
+        "ASP",
+        "BIS",
+        "CRZ",
+        "DSV",
+        "JNF",
+        "KUR",
+        "KZN",
+        "MCS",
+        "MPE",
+        "MXI",
+        "NCB",
+        "OGA",
+        "PHX",
+        "ROD",
+        "SCZ",
+        "SEL",
+        "SWC",
+        "WSB",
+        "WVA",
+        "WYO",
+        "XMS",
+        "YAK",
+        "YEM",
+        "YUG",
+        "YUK",
+        "ZAI",
+        "ZAM",
+        "ZIM"
+      ]
+    }
+  ],
+  "codeToShards": {
+    "ABT": [
+      "level3-000.geojson"
+    ],
+    "AFG": [
+      "level3-000.geojson"
+    ],
+    "AGE": [
+      "level3-000.geojson"
+    ],
+    "AGS": [
+      "level3-000.geojson"
+    ],
+    "AGW": [
+      "level3-000.geojson"
+    ],
+    "ALA": [
+      "level3-000.geojson"
+    ],
+    "ALB": [
+      "level3-000.geojson"
+    ],
+    "ALG": [
+      "level3-000.geojson"
+    ],
+    "ALT": [
+      "level3-000.geojson"
+    ],
+    "AMU": [
+      "level3-000.geojson"
+    ],
+    "AND": [
+      "level3-000.geojson"
+    ],
+    "ANG": [
+      "level3-000.geojson"
+    ],
+    "ANT": [
+      "level3-000.geojson"
+    ],
+    "ARI": [
+      "level3-000.geojson"
+    ],
+    "ARK": [
+      "level3-000.geojson"
+    ],
+    "ARU": [
+      "level3-000.geojson"
+    ],
+    "ASC": [
+      "level3-000.geojson"
+    ],
+    "ASK": [
+      "level3-000.geojson"
+    ],
+    "ASS": [
+      "level3-000.geojson"
+    ],
+    "ATP": [
+      "level3-000.geojson"
+    ],
+    "AUT": [
+      "level3-000.geojson"
+    ],
+    "AZO": [
+      "level3-000.geojson"
+    ],
+    "BAH": [
+      "level3-000.geojson"
+    ],
+    "BAL": [
+      "level3-000.geojson"
+    ],
+    "BAN": [
+      "level3-000.geojson"
+    ],
+    "BEN": [
+      "level3-000.geojson"
+    ],
+    "BER": [
+      "level3-000.geojson"
+    ],
+    "BGM": [
+      "level3-000.geojson"
+    ],
+    "BKN": [
+      "level3-000.geojson"
+    ],
+    "BLR": [
+      "level3-000.geojson"
+    ],
+    "BLT": [
+      "level3-000.geojson"
+    ],
+    "BLZ": [
+      "level3-000.geojson"
+    ],
+    "BOL": [
+      "level3-000.geojson"
+    ],
+    "BOR": [
+      "level3-000.geojson"
+    ],
+    "BOT": [
+      "level3-000.geojson"
+    ],
+    "BOU": [
+      "level3-000.geojson"
+    ],
+    "BRC": [
+      "level3-000.geojson"
+    ],
+    "BRY": [
+      "level3-000.geojson"
+    ],
+    "BUL": [
+      "level3-000.geojson"
+    ],
+    "BUR": [
+      "level3-000.geojson"
+    ],
+    "BZC": [
+      "level3-000.geojson"
+    ],
+    "BZE": [
+      "level3-000.geojson"
+    ],
+    "BZL": [
+      "level3-000.geojson"
+    ],
+    "BZN": [
+      "level3-000.geojson"
+    ],
+    "BZS": [
+      "level3-000.geojson"
+    ],
+    "CAB": [
+      "level3-000.geojson"
+    ],
+    "CAF": [
+      "level3-000.geojson"
+    ],
+    "CAL": [
+      "level3-000.geojson"
+    ],
+    "CAY": [
+      "level3-000.geojson"
+    ],
+    "CBD": [
+      "level3-000.geojson"
+    ],
+    "CGS": [
+      "level3-000.geojson"
+    ],
+    "CHA": [
+      "level3-000.geojson"
+    ],
+    "CHC": [
+      "level3-000.geojson"
+    ],
+    "CHH": [
+      "level3-000.geojson"
+    ],
+    "CHI": [
+      "level3-000.geojson"
+    ],
+    "CHM": [
+      "level3-000.geojson"
+    ],
+    "CHN": [
+      "level3-000.geojson"
+    ],
+    "CHQ": [
+      "level3-000.geojson"
+    ],
+    "CHS": [
+      "level3-000.geojson"
+    ],
+    "CHT": [
+      "level3-000.geojson"
+    ],
+    "CHX": [
+      "level3-000.geojson"
+    ],
+    "CKI": [
+      "level3-000.geojson"
+    ],
+    "CLC": [
+      "level3-000.geojson"
+    ],
+    "CLM": [
+      "level3-000.geojson"
+    ],
+    "CLN": [
+      "level3-000.geojson"
+    ],
+    "CLS": [
+      "level3-000.geojson"
+    ],
+    "CMN": [
+      "level3-000.geojson"
+    ],
+    "CNT": [
+      "level3-000.geojson"
+    ],
+    "CNY": [
+      "level3-000.geojson"
+    ],
+    "COL": [
+      "level3-000.geojson"
+    ],
+    "COM": [
+      "level3-000.geojson"
+    ],
+    "CON": [
+      "level3-000.geojson"
+    ],
+    "COO": [
+      "level3-000.geojson"
+    ],
+    "COR": [
+      "level3-000.geojson"
+    ],
+    "COS": [
+      "level3-000.geojson"
+    ],
+    "CPI": [
+      "level3-000.geojson"
+    ],
+    "CPP": [
+      "level3-000.geojson"
+    ],
+    "CPV": [
+      "level3-000.geojson"
+    ],
+    "CRL": [
+      "level3-000.geojson"
+    ],
+    "CTA": [
+      "level3-000.geojson"
+    ],
+    "CTM": [
+      "level3-000.geojson"
+    ],
+    "CUB": [
+      "level3-000.geojson"
+    ],
+    "CVI": [
+      "level3-000.geojson"
+    ],
+    "CYP": [
+      "level3-000.geojson"
+    ],
+    "CZE": [
+      "level3-000.geojson"
+    ],
+    "DEL": [
+      "level3-000.geojson"
+    ],
+    "DEN": [
+      "level3-000.geojson"
+    ],
+    "DJI": [
+      "level3-000.geojson"
+    ],
+    "DOM": [
+      "level3-000.geojson"
+    ],
+    "EAI": [
+      "level3-000.geojson"
+    ],
+    "EAS": [
+      "level3-000.geojson"
+    ],
+    "ECU": [
+      "level3-000.geojson"
+    ],
+    "EGY": [
+      "level3-000.geojson"
+    ],
+    "EHM": [
+      "level3-000.geojson"
+    ],
+    "ELS": [
+      "level3-000.geojson"
+    ],
+    "EQG": [
+      "level3-000.geojson"
+    ],
+    "ERI": [
+      "level3-000.geojson"
+    ],
+    "ETH": [
+      "level3-000.geojson"
+    ],
+    "FAL": [
+      "level3-000.geojson"
+    ],
+    "FIJ": [
+      "level3-000.geojson"
+    ],
+    "FIN": [
+      "level3-000.geojson"
+    ],
+    "FLA": [
+      "level3-000.geojson"
+    ],
+    "FOR": [
+      "level3-000.geojson"
+    ],
+    "FRA": [
+      "level3-000.geojson"
+    ],
+    "FRG": [
+      "level3-000.geojson"
+    ],
+    "GAB": [
+      "level3-001.geojson"
+    ],
+    "GAL": [
+      "level3-001.geojson"
+    ],
+    "GAM": [
+      "level3-001.geojson"
+    ],
+    "GEO": [
+      "level3-001.geojson"
+    ],
+    "GER": [
+      "level3-001.geojson"
+    ],
+    "GGI": [
+      "level3-001.geojson"
+    ],
+    "GHA": [
+      "level3-001.geojson"
+    ],
+    "GIL": [
+      "level3-001.geojson"
+    ],
+    "GNB": [
+      "level3-001.geojson"
+    ],
+    "GNL": [
+      "level3-001.geojson"
+    ],
+    "GRB": [
+      "level3-001.geojson"
+    ],
+    "GRC": [
+      "level3-001.geojson"
+    ],
+    "GST": [
+      "level3-001.geojson"
+    ],
+    "GUA": [
+      "level3-001.geojson"
+    ],
+    "GUI": [
+      "level3-001.geojson"
+    ],
+    "GUY": [
+      "level3-001.geojson"
+    ],
+    "HAI": [
+      "level3-001.geojson"
+    ],
+    "HAW": [
+      "level3-001.geojson"
+    ],
+    "HBI": [
+      "level3-001.geojson"
+    ],
+    "HMD": [
+      "level3-001.geojson"
+    ],
+    "HON": [
+      "level3-001.geojson"
+    ],
+    "HUN": [
+      "level3-001.geojson"
+    ],
+    "ICE": [
+      "level3-001.geojson"
+    ],
+    "IDA": [
+      "level3-001.geojson"
+    ],
+    "ILL": [
+      "level3-001.geojson"
+    ],
+    "IND": [
+      "level3-001.geojson"
+    ],
+    "INI": [
+      "level3-001.geojson"
+    ],
+    "IOW": [
+      "level3-001.geojson"
+    ],
+    "IRE": [
+      "level3-001.geojson"
+    ],
+    "IRK": [
+      "level3-001.geojson"
+    ],
+    "IRN": [
+      "level3-001.geojson"
+    ],
+    "IRQ": [
+      "level3-001.geojson"
+    ],
+    "ITA": [
+      "level3-001.geojson"
+    ],
+    "IVO": [
+      "level3-001.geojson"
+    ],
+    "JAM": [
+      "level3-001.geojson"
+    ],
+    "JAP": [
+      "level3-001.geojson"
+    ],
+    "JAW": [
+      "level3-001.geojson"
+    ],
+    "KAM": [
+      "level3-001.geojson"
+    ],
+    "KAN": [
+      "level3-001.geojson"
+    ],
+    "KAZ": [
+      "level3-001.geojson"
+    ],
+    "KEG": [
+      "level3-001.geojson"
+    ],
+    "KEN": [
+      "level3-001.geojson"
+    ],
+    "KER": [
+      "level3-001.geojson"
+    ],
+    "KGZ": [
+      "level3-001.geojson"
+    ],
+    "KHA": [
+      "level3-001.geojson"
+    ],
+    "KOR": [
+      "level3-001.geojson"
+    ],
+    "KRA": [
+      "level3-001.geojson"
+    ],
+    "KRI": [
+      "level3-001.geojson"
+    ],
+    "KRY": [
+      "level3-001.geojson"
+    ],
+    "KTY": [
+      "level3-001.geojson"
+    ],
+    "KUW": [
+      "level3-001.geojson"
+    ],
+    "LAB": [
+      "level3-001.geojson"
+    ],
+    "LAO": [
+      "level3-001.geojson"
+    ],
+    "LBR": [
+      "level3-001.geojson"
+    ],
+    "LBS": [
+      "level3-001.geojson"
+    ],
+    "LBY": [
+      "level3-001.geojson"
+    ],
+    "LDV": [
+      "level3-001.geojson"
+    ],
+    "LEE": [
+      "level3-001.geojson"
+    ],
+    "LES": [
+      "level3-001.geojson"
+    ],
+    "LIN": [
+      "level3-001.geojson"
+    ],
+    "LOU": [
+      "level3-001.geojson"
+    ],
+    "LSI": [
+      "level3-001.geojson"
+    ],
+    "MAG": [
+      "level3-001.geojson"
+    ],
+    "MAI": [
+      "level3-001.geojson"
+    ],
+    "MAN": [
+      "level3-001.geojson"
+    ],
+    "MAQ": [
+      "level3-001.geojson"
+    ],
+    "MAS": [
+      "level3-001.geojson"
+    ],
+    "MAU": [
+      "level3-001.geojson"
+    ],
+    "MCI": [
+      "level3-001.geojson"
+    ],
+    "MDG": [
+      "level3-001.geojson"
+    ],
+    "MDR": [
+      "level3-001.geojson"
+    ],
+    "MDV": [
+      "level3-001.geojson"
+    ],
+    "MIC": [
+      "level3-001.geojson"
+    ],
+    "MIN": [
+      "level3-001.geojson"
+    ],
+    "MLI": [
+      "level3-001.geojson"
+    ],
+    "MLW": [
+      "level3-001.geojson"
+    ],
+    "MLY": [
+      "level3-001.geojson"
+    ],
+    "MNT": [
+      "level3-001.geojson"
+    ],
+    "MOL": [
+      "level3-001.geojson"
+    ],
+    "MON": [
+      "level3-001.geojson"
+    ],
+    "MOR": [
+      "level3-001.geojson"
+    ],
+    "MOZ": [
+      "level3-001.geojson"
+    ],
+    "MRN": [
+      "level3-001.geojson"
+    ],
+    "MRQ": [
+      "level3-001.geojson"
+    ],
+    "MRS": [
+      "level3-001.geojson"
+    ],
+    "MRY": [
+      "level3-001.geojson"
+    ],
+    "MSI": [
+      "level3-001.geojson"
+    ],
+    "MSO": [
+      "level3-001.geojson"
+    ],
+    "MTN": [
+      "level3-001.geojson"
+    ],
+    "MXC": [
+      "level3-001.geojson"
+    ],
+    "MXE": [
+      "level3-001.geojson"
+    ],
+    "MXG": [
+      "level3-001.geojson"
+    ],
+    "MXN": [
+      "level3-001.geojson"
+    ],
+    "MXS": [
+      "level3-001.geojson"
+    ],
+    "MXT": [
+      "level3-001.geojson"
+    ],
+    "MYA": [
+      "level3-001.geojson"
+    ],
+    "NAM": [
+      "level3-001.geojson"
+    ],
+    "NAT": [
+      "level3-001.geojson"
+    ],
+    "NBR": [
+      "level3-001.geojson"
+    ],
+    "NCA": [
+      "level3-001.geojson"
+    ],
+    "NCS": [
+      "level3-001.geojson"
+    ],
+    "NDA": [
+      "level3-001.geojson"
+    ],
+    "NEB": [
+      "level3-001.geojson"
+    ],
+    "NEP": [
+      "level3-001.geojson"
+    ],
+    "NET": [
+      "level3-001.geojson"
+    ],
+    "NEV": [
+      "level3-001.geojson"
+    ],
+    "NFK": [
+      "level3-001.geojson"
+    ],
+    "NFL": [
+      "level3-001.geojson"
+    ],
+    "NGA": [
+      "level3-001.geojson"
+    ],
+    "NGR": [
+      "level3-001.geojson"
+    ],
+    "NIC": [
+      "level3-001.geojson"
+    ],
+    "NLA": [
+      "level3-001.geojson"
+    ],
+    "NNS": [
+      "level3-001.geojson"
+    ],
+    "NOR": [
+      "level3-001.geojson"
+    ],
+    "NRU": [
+      "level3-001.geojson"
+    ],
+    "NSC": [
+      "level3-001.geojson"
+    ],
+    "NSW": [
+      "level3-001.geojson"
+    ],
+    "NTA": [
+      "level3-001.geojson"
+    ],
+    "NUE": [
+      "level3-001.geojson"
+    ],
+    "NUN": [
+      "level3-002.geojson"
+    ],
+    "NWC": [
+      "level3-002.geojson"
+    ],
+    "NWG": [
+      "level3-002.geojson"
+    ],
+    "NWH": [
+      "level3-002.geojson"
+    ],
+    "NWJ": [
+      "level3-002.geojson"
+    ],
+    "NWM": [
+      "level3-002.geojson"
+    ],
+    "NWT": [
+      "level3-002.geojson"
+    ],
+    "NWY": [
+      "level3-002.geojson"
+    ],
+    "NZN": [
+      "level3-002.geojson"
+    ],
+    "NZS": [
+      "level3-002.geojson"
+    ],
+    "OFS": [
+      "level3-002.geojson"
+    ],
+    "OHI": [
+      "level3-002.geojson"
+    ],
+    "OKL": [
+      "level3-002.geojson"
+    ],
+    "OMA": [
+      "level3-002.geojson"
+    ],
+    "ONT": [
+      "level3-002.geojson"
+    ],
+    "ORE": [
+      "level3-002.geojson"
+    ],
+    "PAK": [
+      "level3-002.geojson"
+    ],
+    "PAL": [
+      "level3-002.geojson"
+    ],
+    "PAN": [
+      "level3-002.geojson"
+    ],
+    "PAR": [
+      "level3-002.geojson"
+    ],
+    "PEI": [
+      "level3-002.geojson"
+    ],
+    "PEN": [
+      "level3-002.geojson"
+    ],
+    "PER": [
+      "level3-002.geojson"
+    ],
+    "PHI": [
+      "level3-002.geojson"
+    ],
+    "PIT": [
+      "level3-002.geojson"
+    ],
+    "POL": [
+      "level3-002.geojson"
+    ],
+    "POR": [
+      "level3-002.geojson"
+    ],
+    "PRM": [
+      "level3-002.geojson"
+    ],
+    "PUE": [
+      "level3-002.geojson"
+    ],
+    "QLD": [
+      "level3-002.geojson"
+    ],
+    "QUE": [
+      "level3-002.geojson"
+    ],
+    "REU": [
+      "level3-002.geojson"
+    ],
+    "RHO": [
+      "level3-002.geojson"
+    ],
+    "ROM": [
+      "level3-002.geojson"
+    ],
+    "RUC": [
+      "level3-002.geojson"
+    ],
+    "RUE": [
+      "level3-002.geojson"
+    ],
+    "RUN": [
+      "level3-002.geojson"
+    ],
+    "RUS": [
+      "level3-002.geojson"
+    ],
+    "RUW": [
+      "level3-002.geojson"
+    ],
+    "RWA": [
+      "level3-002.geojson"
+    ],
+    "SAK": [
+      "level3-002.geojson"
+    ],
+    "SAM": [
+      "level3-002.geojson"
+    ],
+    "SAR": [
+      "level3-002.geojson"
+    ],
+    "SAS": [
+      "level3-002.geojson"
+    ],
+    "SAU": [
+      "level3-002.geojson"
+    ],
+    "SCA": [
+      "level3-002.geojson"
+    ],
+    "SCI": [
+      "level3-002.geojson"
+    ],
+    "SCS": [
+      "level3-002.geojson"
+    ],
+    "SDA": [
+      "level3-002.geojson"
+    ],
+    "SEN": [
+      "level3-002.geojson"
+    ],
+    "SEY": [
+      "level3-002.geojson"
+    ],
+    "SGE": [
+      "level3-002.geojson"
+    ],
+    "SIC": [
+      "level3-002.geojson"
+    ],
+    "SIE": [
+      "level3-002.geojson"
+    ],
+    "SIN": [
+      "level3-002.geojson"
+    ],
+    "SOA": [
+      "level3-002.geojson"
+    ],
+    "SOC": [
+      "level3-002.geojson"
+    ],
+    "SOL": [
+      "level3-002.geojson"
+    ],
+    "SOM": [
+      "level3-002.geojson"
+    ],
+    "SPA": [
+      "level3-002.geojson"
+    ],
+    "SRL": [
+      "level3-002.geojson"
+    ],
+    "SSA": [
+      "level3-002.geojson"
+    ],
+    "STH": [
+      "level3-002.geojson"
+    ],
+    "SUD": [
+      "level3-002.geojson"
+    ],
+    "SUL": [
+      "level3-002.geojson"
+    ],
+    "SUM": [
+      "level3-002.geojson"
+    ],
+    "SUR": [
+      "level3-002.geojson"
+    ],
+    "SVA": [
+      "level3-002.geojson"
+    ],
+    "SWE": [
+      "level3-002.geojson"
+    ],
+    "SWI": [
+      "level3-002.geojson"
+    ],
+    "SWZ": [
+      "level3-002.geojson"
+    ],
+    "TAI": [
+      "level3-002.geojson"
+    ],
+    "TAN": [
+      "level3-002.geojson"
+    ],
+    "TAS": [
+      "level3-002.geojson"
+    ],
+    "TCI": [
+      "level3-002.geojson"
+    ],
+    "TCS": [
+      "level3-002.geojson"
+    ],
+    "TDC": [
+      "level3-002.geojson"
+    ],
+    "TEN": [
+      "level3-002.geojson"
+    ],
+    "TEX": [
+      "level3-002.geojson"
+    ],
+    "THA": [
+      "level3-002.geojson"
+    ],
+    "TKM": [
+      "level3-002.geojson"
+    ],
+    "TOG": [
+      "level3-002.geojson"
+    ],
+    "TOK": [
+      "level3-002.geojson"
+    ],
+    "TON": [
+      "level3-002.geojson"
+    ],
+    "TRT": [
+      "level3-002.geojson"
+    ],
+    "TUA": [
+      "level3-002.geojson"
+    ],
+    "TUB": [
+      "level3-002.geojson"
+    ],
+    "TUE": [
+      "level3-002.geojson"
+    ],
+    "TUN": [
+      "level3-002.geojson"
+    ],
+    "TUR": [
+      "level3-002.geojson"
+    ],
+    "TUV": [
+      "level3-002.geojson"
+    ],
+    "TVA": [
+      "level3-002.geojson"
+    ],
+    "TVL": [
+      "level3-002.geojson"
+    ],
+    "TZK": [
+      "level3-002.geojson"
+    ],
+    "UGA": [
+      "level3-002.geojson"
+    ],
+    "UKR": [
+      "level3-002.geojson"
+    ],
+    "URU": [
+      "level3-002.geojson"
+    ],
+    "UTA": [
+      "level3-002.geojson"
+    ],
+    "UZB": [
+      "level3-002.geojson"
+    ],
+    "VAN": [
+      "level3-002.geojson"
+    ],
+    "VEN": [
+      "level3-002.geojson"
+    ],
+    "VER": [
+      "level3-002.geojson"
+    ],
+    "VIC": [
+      "level3-002.geojson"
+    ],
+    "VIE": [
+      "level3-002.geojson"
+    ],
+    "VNA": [
+      "level3-002.geojson"
+    ],
+    "VRG": [
+      "level3-002.geojson"
+    ],
+    "WAK": [
+      "level3-002.geojson"
+    ],
+    "WAL": [
+      "level3-002.geojson"
+    ],
+    "WAS": [
+      "level3-002.geojson"
+    ],
+    "WAU": [
+      "level3-002.geojson"
+    ],
+    "WDC": [
+      "level3-002.geojson"
+    ],
+    "WHM": [
+      "level3-002.geojson"
+    ],
+    "WIN": [
+      "level3-002.geojson"
+    ],
+    "WIS": [
+      "level3-002.geojson"
+    ],
+    "WSA": [
+      "level3-002.geojson"
+    ],
+    "ALD": [
+      "level3-003.geojson"
+    ],
+    "ALU": [
+      "level3-003.geojson"
+    ],
+    "ASP": [
+      "level3-003.geojson"
+    ],
+    "BIS": [
+      "level3-003.geojson"
+    ],
+    "CRZ": [
+      "level3-003.geojson"
+    ],
+    "DSV": [
+      "level3-003.geojson"
+    ],
+    "JNF": [
+      "level3-003.geojson"
+    ],
+    "KUR": [
+      "level3-003.geojson"
+    ],
+    "KZN": [
+      "level3-003.geojson"
+    ],
+    "MCS": [
+      "level3-003.geojson"
+    ],
+    "MPE": [
+      "level3-003.geojson"
+    ],
+    "MXI": [
+      "level3-003.geojson"
+    ],
+    "NCB": [
+      "level3-003.geojson"
+    ],
+    "OGA": [
+      "level3-003.geojson"
+    ],
+    "PHX": [
+      "level3-003.geojson"
+    ],
+    "ROD": [
+      "level3-003.geojson"
+    ],
+    "SCZ": [
+      "level3-003.geojson"
+    ],
+    "SEL": [
+      "level3-003.geojson"
+    ],
+    "SWC": [
+      "level3-003.geojson"
+    ],
+    "WSB": [
+      "level3-003.geojson"
+    ],
+    "WVA": [
+      "level3-003.geojson"
+    ],
+    "WYO": [
+      "level3-003.geojson"
+    ],
+    "XMS": [
+      "level3-003.geojson"
+    ],
+    "YAK": [
+      "level3-003.geojson"
+    ],
+    "YEM": [
+      "level3-003.geojson"
+    ],
+    "YUG": [
+      "level3-003.geojson"
+    ],
+    "YUK": [
+      "level3-003.geojson"
+    ],
+    "ZAI": [
+      "level3-003.geojson"
+    ],
+    "ZAM": [
+      "level3-003.geojson"
+    ],
+    "ZIM": [
+      "level3-003.geojson"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+# Only deploy files needed by the public website.
+scripts/
+source-downloads/
+.github/
+*.md
+*.bat
+*.sh
+wrangler.jsonc
+data/sources/
+data/schema.json
