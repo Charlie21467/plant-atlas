@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "speciesRecord": {
+    "id": "string: stable Plant Atlas id",
+    "scientificName": "string: accepted scientific name",
+    "scientificNameAuthorship": "string|null",
+    "family": "string|null",
+    "genus": "string|null",
+    "rank": "SPECIES",
+    "taxonomicStatus": "Accepted",
+    "wcvp": {
+      "plantNameId": "string|number",
+      "ipniId": "string|null",
+      "powoId": "string|null",
+      "powoUrl": "string|null"
+    },
+    "commonNames": [
+      {
+        "name": "string",
+        "language": "string|null",
+        "source": "GBIF|POWO|other"
+      }
+    ],
+    "distribution": {
+      "native": ["TDWG Level 3 code"],
+      "introduced": ["TDWG Level 3 code"],
+      "extinct": ["TDWG Level 3 code"],
+      "doubtful": ["TDWG Level 3 code"]
+    },
+    "invasive": [
+      {
+        "tdwgCode": "string",
+        "source": "string",
+        "sourceUrl": "string",
+        "evidence": "string"
+      }
+    ],
+    "gbif": {
+      "taxonKey": "string|number|null"
+    },
+    "sources": [
+      {
+        "provider": "string",
+        "type": "taxonomy|native_distribution|introduced_distribution|invasive|occurrence",
+        "url": "string",
+        "accessed": "YYYY-MM-DD"
+      }
+    ]
+  }
+}

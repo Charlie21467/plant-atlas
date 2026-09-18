@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plant Atlas — explore where plants are native, introduced, and invasive.">
+  <title>Plant Atlas — Global Plant Ranges</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Plant Atlas home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none"><path d="M28.8 7.1C19 7.2 10.3 10 7.1 16.1c-2.1 4-.9 9.2 1.1 12.1 4.4-1 9-3.1 11.8-7 3.2-4.4 4.6-9.2 8.8-14.1Z" fill="currentColor"/><path d="M8.8 29.2c5.4-6.5 10.1-10.3 18.3-15.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-copy"><strong>Plant Atlas</strong><small>Global plant distributions</small></span>
+      </a>
+
+      <div class="global-search" role="search">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Search a plant, e.g. orange daylily…">
+        <kbd>/</kbd>
+      </div>
+
+      <nav class="nav-actions" aria-label="Primary navigation">
+        <button class="nav-btn active" id="aboutBtn">About</button>
+      </nav>
+    </header>
+
+    <main class="workspace">
+      <aside class="control-panel" aria-label="Plant controls">
+        <section class="hero-section">
+          <div class="eyebrow">SPECIES EXPLORER</div>
+          <h1>Where does a plant belong?</h1>
+          <p>Search a species and separate its native range from places where it was introduced or became invasive.</p>
+        </section>
+
+        <section class="panel-section">
+          <div class="section-heading">
+            <div><div class="section-label">Search</div><h2>Species</h2></div>
+            <span class="catalog-pill" id="catalogCount">0 species</span>
+          </div>
+          <div id="searchResults" class="search-results"><div class="search-hint">Start typing above to find a species.</div></div>
+        </section>
+
+        <section class="panel-section">
+          <div class="section-heading">
+            <div><div class="section-label">Selection</div><h2 id="selectionTitle">Nothing selected</h2></div>
+            <button class="text-btn" id="clearSelectionBtn">Clear</button>
+          </div>
+          <div id="selectionList" class="selection-list"><div class="empty-state">Selected plants appear here.</div></div>
+        </section>
+
+        <section class="panel-section layer-section">
+          <div class="section-label">Map layers</div>
+          <label class="layer-control"><span><i class="swatch native"></i>Native range</span><input type="checkbox" id="nativeToggle" checked></label>
+          <label class="layer-control"><span><i class="swatch introduced"></i>Introduced range</span><input type="checkbox" id="introducedToggle" checked></label>
+          <label class="layer-control"><span><i class="swatch invasive"></i>Invasive / naturalized</span><input type="checkbox" id="invasiveToggle" checked></label>
+          <label class="layer-control"><span><i class="swatch observation"></i>Occurrence records</span><input type="checkbox" id="observationToggle"></label>
+        </section>
+
+        <section class="panel-section explore-section">
+          <div class="section-heading"><div><div class="section-label">Try a species</div><h2>Examples</h2></div></div>
+          <div class="example-grid">
+            <button class="example-card" data-plant="hemful"><span>Orange daylily</span><em>Hemerocallis fulva</em></button>
+            <button class="example-card" data-plant="alliaria"><span>Garlic mustard</span><em>Alliaria petiolata</em></button>
+            <button class="example-card" data-plant="kudzu"><span>Kudzu</span><em>Pueraria montana</em></button>
+            <button class="example-card" data-plant="milkweed"><span>Common milkweed</span><em>Asclepias syriaca</em></button>
+          </div>
+        </section>
+
+        <footer class="panel-footer"><span class="status-line"><i></i>Map ready</span><button class="footer-link" id="sourcesBtn">Sources & methodology</button></footer>
+      </aside>
+
+      <section class="map-shell">
+        <div id="map" aria-label="Interactive world map"></div>
+        <div class="map-overlay map-top">
+          <div class="map-card">
+            <div class="map-card-row">
+              <div><div class="eyebrow">GLOBAL RANGE MAP</div><strong id="mapTitle">Choose a plant</strong></div>
+              <button class="map-reset" id="resetView">Reset</button>
+            </div>
+            <p id="mapStatus">Source-backed WCVP ranges appear after the data import is deployed; the local map does not rely on a third-party tile service.</p>
+          </div>
+        </div>
+        <div class="map-overlay map-bottom">
+          <div class="legend-card">
+            <div class="legend-item"><i class="legend-swatch native"></i>Native</div>
+            <div class="legend-item"><i class="legend-swatch introduced"></i>Introduced</div>
+            <div class="legend-item"><i class="legend-swatch invasive"></i>Invasive</div>
+            <div class="legend-item"><i class="legend-dot"></i>Records</div>
+          </div>
+          <div class="map-note">Country boundaries: Natural Earth · no external tile service</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="aboutDialog">
+    <div class="dialog-shell">
+      <button class="dialog-close" data-close="aboutDialog" aria-label="Close">×</button>
+      <div class="eyebrow">ABOUT PLANT ATLAS</div>
+      <h2>A map-first plant reference.</h2>
+      <p>Plant Atlas is organized around a simple question: where is a plant from, where has it spread, and what evidence supports those labels?</p>
+      <div class="source-grid">
+        <div><strong>Taxonomy</strong><span>Kew Plants of the World Online / WCVP</span></div>
+        <div><strong>Occurrences</strong><span>GBIF and other biodiversity repositories</span></div>
+        <div><strong>Invasive status</strong><span>CABI plus regional authorities</span></div>
+      </div>
+      <p class="note"><strong>Data note:</strong> before the WCVP pipeline is run, the site falls back to the small prototype catalog. After import, the frontend loads the source-backed catalog and WGSRPD Level 3 range geometry.</p>
+    </div>
+  </dialog>
+
+  <dialog id="sourcesDialog">
+    <div class="dialog-shell">
+      <button class="dialog-close" data-close="sourcesDialog" aria-label="Close">×</button>
+      <div class="eyebrow">SOURCES & METHODOLOGY</div>
+      <h2>What should count as a range?</h2>
+      <p>Native and introduced ranges come from WCVP/POWO. Occurrence records are queried from GBIF and are not treated as proof of native or invasive status. Invasive labels require an explicit source record.</p>
+      <div class="methodology-list">
+        <div><strong>Native range</strong><span>Use taxonomic/distribution references such as Kew POWO/WCVP and regional floras.</span></div>
+        <div><strong>Introduced range</strong><span>Use documented naturalization or introduction records with regional sources where available.</span></div>
+        <div><strong>Invasive range</strong><span>Only mark locations backed by an invasive-species authority or clearly cited scientific source.</span></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

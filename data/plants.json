@@ -1,0 +1,77 @@
+[
+  {
+    "id": "hemful",
+    "common": "Orange daylily",
+    "scientific": "Hemerocallis fulva",
+    "family": "Asphodelaceae",
+    "status": "introduced + invasive in parts",
+    "note": "A widely planted perennial that has naturalized across much of temperate North America.",
+    "ranges": {
+      "native": ["CHN", "KOR", "JPN"],
+      "introduced": ["GBR", "FRA", "DEU", "USA", "CAN", "CHL", "AUS"],
+      "invasive": ["USA", "CAN", "AUS"]
+    },
+    "observationCenter": [41.6, -93.6],
+    "sources": ["https://powo.science.kew.org/", "https://www.cabi.org/isc/"]
+  },
+  {
+    "id": "alliaria",
+    "common": "Garlic mustard",
+    "scientific": "Alliaria petiolata",
+    "family": "Brassicaceae",
+    "status": "introduced + invasive in parts",
+    "note": "A Eurasian biennial that is invasive in many deciduous-forest systems in North America.",
+    "ranges": {
+      "native": ["GBR", "FRA", "DEU", "POL", "ESP", "ITA", "GRC", "TUR", "MAR"],
+      "introduced": ["USA", "CAN", "NZL"],
+      "invasive": ["USA", "CAN"]
+    },
+    "observationCenter": [44.5, -92.2],
+    "sources": ["https://powo.science.kew.org/", "https://www.cabi.org/isc/"]
+  },
+  {
+    "id": "kudzu",
+    "common": "Kudzu",
+    "scientific": "Pueraria montana",
+    "family": "Fabaceae",
+    "status": "introduced + invasive in parts",
+    "note": "A vigorous vine native to East Asia that has become invasive in parts of the southeastern United States.",
+    "ranges": {
+      "native": ["CHN", "KOR", "JPN"],
+      "introduced": ["USA", "AUS", "NZL"],
+      "invasive": ["USA"]
+    },
+    "observationCenter": [33.1, -86.8],
+    "sources": ["https://powo.science.kew.org/", "https://www.cabi.org/isc/"]
+  },
+  {
+    "id": "milkweed",
+    "common": "Common milkweed",
+    "scientific": "Asclepias syriaca",
+    "family": "Apocynaceae",
+    "status": "native",
+    "note": "A North American native prairie and field species important to monarch butterflies.",
+    "ranges": {
+      "native": ["USA", "CAN"],
+      "introduced": [],
+      "invasive": []
+    },
+    "observationCenter": [41.9, -93.3],
+    "sources": ["https://powo.science.kew.org/"]
+  },
+  {
+    "id": "coneflower",
+    "common": "Purple coneflower",
+    "scientific": "Echinacea purpurea",
+    "family": "Asteraceae",
+    "status": "native",
+    "note": "A North American prairie wildflower widely grown in gardens and pollinator plantings.",
+    "ranges": {
+      "native": ["USA", "CAN"],
+      "introduced": ["GBR", "DEU"],
+      "invasive": []
+    },
+    "observationCenter": [39.1, -90.2],
+    "sources": ["https://powo.science.kew.org/"]
+  }
+]
